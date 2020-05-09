@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RepresentMe</string>
+    <string name="CountryText">Type Country</string>
+    <string name="repSearch">Search</string>
 </resources>
