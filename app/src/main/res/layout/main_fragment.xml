@@ -7,25 +7,58 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainFragment">
 
-    <TextView
-        android:id="@+id/CountrySearch"
-        android:layout_width="366dp"
-        android:layout_height="39dp"
+    <Button
+        android:id="@+id/searchPres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="@string/CountryText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        android:text="Presidential Elections"
+        app:layout_constraintBottom_toTopOf="@+id/seeSenators"
+        app:layout_constraintEnd_toEndOf="@id/seeSenators"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/seeSenators"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:text="@string/repSearch"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="32dp"
+        android:text="Senators"
+        app:layout_constraintEnd_toEndOf="@id/houseOfReps"
+        app:layout_constraintStart_toStartOf="@id/searchPres"
+        app:layout_constraintTop_toBottomOf="@+id/searchPres" />
+
+    <Button
+        android:id="@+id/houseOfReps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="House of Representatives"
+        app:layout_constraintEnd_toEndOf="@id/supremeCourt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/seeSenators"
+        app:layout_constraintTop_toBottomOf="@+id/seeSenators" />
+
+    <Button
+        android:id="@+id/supremeCourt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Supreme Court Justices"
+        app:layout_constraintEnd_toEndOf="@id/president"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/houseOfReps" />
+
+    <Button
+        android:id="@+id/president"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="President of the US"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/supremeCourt"
+        app:layout_constraintTop_toBottomOf="@+id/supremeCourt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
